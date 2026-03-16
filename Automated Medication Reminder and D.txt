@@ -1,0 +1,94 @@
+Automated Medication Reminder and Dispensing System 💊⏰
+
+Using Embedded Systems and IoT
+
+📌 Project Overview
+
+The Automated Medication Reminder and Dispensing System is designed to assist dementia patients who often forget to take their medication on time. The system provides automated reminders and ensures that medication is taken according to a scheduled routine.
+
+This project uses an ESP32 microcontroller along with sensors and actuators to alert patients through sound and visual signals. It also allows confirmation of medication intake and notifies caregivers when the patient takes their medicine.
+
+🚀 Features
+
+Automatic medication reminders at scheduled times
+
+Audible alerts using a buzzer
+
+Visual status indicators using LEDs
+
+Push button confirmation for medication intake
+
+Servo motor–based dispensing mechanism
+
+Caregiver notification system
+
+Automatic system reset if medication is not taken within the time window
+
+🛠️ Technologies Used
+
+ESP32 Microcontroller – Main controller of the system
+
+Real-Time Clock (RTC) Module – Maintains accurate time scheduling
+
+Servo Motor – Controls medication dispensing
+
+LED Indicators – Shows system status (pending / taken)
+
+Buzzer – Provides audible reminders
+
+Embedded C / Arduino Programming – Controls system logic
+
+🧠 System Workflow
+
+The system initializes and loads three daily medication schedules (morning, noon, night).
+
+The RTC module tracks the current time and compares it with the scheduled medication times.
+
+When a scheduled time arrives:
+
+The buzzer sounds to alert the patient.
+
+The blue LED turns on, indicating medication is pending.
+
+If the patient takes the medicine and presses the push button:
+
+The buzzer stops.
+
+The blue LED turns off and the green LED turns on.
+
+The servo motor activates to simulate medication dispensing.
+
+A confirmation message is sent to the caregiver.
+
+If medication is not taken within one hour, the system resets and waits for the next scheduled time.
+
+🔔 Status Indicator System
+Indicator	Meaning
+Blue LED	Medication pending
+Green LED	Medication taken
+Buzzer	Reminder alert
+⚙️ Components Required
+
+ESP32 Microcontroller
+
+RTC Module
+
+Servo Motor
+
+Push Button
+
+Buzzer
+
+Blue LED
+
+Green LED
+
+Power Supply
+
+📌 Applications
+
+Dementia and Alzheimer’s patient care
+
+Elderly medication management
+
+Smart healthcare monitoring systems
